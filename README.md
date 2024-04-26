@@ -26,7 +26,7 @@ yarn add text-template-editor
 //引入组件
 import TextTemplateEditor from "text-template-editor";
 //引入组件样式，也可以根据class自己写
-import "text-template-editor/style.css"
+import "text-template-editor/dist/style.css";
 import Mustache from "mustache";
 import { ref } from "vue";
 const textDict = {
