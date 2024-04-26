@@ -2,15 +2,17 @@
 
 用途：在低代码平台中需要有编辑字符串模版，例如一个字符串部分是静态字符串，一部分是由数据库中字段的值替换，下图的例子中，我们编辑了一个字符串模版，并把这个字符串模版翻译成了最后的实际值
 
-![这是一个示例图片](./case.png)
+![这是一个示例图片](https://github.com/Baozi926/text-template-editor/raw/main/case.png)
 
 # 例子
 
 ```vue
 
 <script setup lang="ts">
-// import TextTemplateEditor from "./components/TextTemplateEditor.vue";
+
+//引入组件
 import TextTemplateEditor from "text-template-editor";
+//引入组件样式，也可以根据class自己写
 import "text-template-editor/style.css"
 import Mustache from "mustache";
 import { ref } from "vue";
@@ -100,5 +102,24 @@ const doTranslate = () => {
 
 
 
+
+```
+
+
+组件默认样式，可自行覆盖
+```scss
+.text-editor-chm {
+  .cm-line {
+    line-height: 1.7; /* 或者使用其他值，根据你的需求调整 */
+  }
+  .field-placeholder {
+    padding: 2px 5px;
+    margin: 0 2px;
+    background: #007bff;
+    color: white;
+    border: none;
+    border-radius: 4px;
+  }
+}
 
 ```
