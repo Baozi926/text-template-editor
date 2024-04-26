@@ -140,6 +140,9 @@ onMounted(() => {
 });
 
 onUnmounted(() => {
+  if (!editorView) {
+    return;
+  }
   editorView.destroy();
 });
 </script>

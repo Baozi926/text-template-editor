@@ -11,7 +11,6 @@ export default defineConfig({
     rollupOptions: {
       //忽略打包vue文件
       external: ["vue"],
-      //input: ["index.ts"],
       output: {
         globals: {
           vue: "Vue",
@@ -22,7 +21,7 @@ export default defineConfig({
     lib: {
       entry: "./src/index.ts",
       name: "text-template-editor",
-      fileName: "text-template-editor",
+      fileName: "index",
       formats: ["es", "umd", "cjs"],
     },
   },

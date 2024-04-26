@@ -1,13 +1,20 @@
 {
   "name": "text-template-editor",
-  "version": "0.0.3",
+  "author": "cai huimin",
+  "version": "0.0.8",
   "type": "module",
-  "main": "./dist/text-template-editor.js",
-  "source":"src/index.ts",
+  "files": [
+    "dist"
+  ],
+  "main": "./dist/index.js",
+  "module": "./dist/index.js",
   "exports": {
-    "require": "./dist/text-template-editor.cjs",     
-    "default": "./dist/text-template-editor.js" 
+    ".": {
+      "import": "./dist/index.js",
+      "require": "./dist/index.umd.js"
+    }
   },
+  "source": "src/index.ts",
   "description": "",
   "scripts": {
     "dev": "vite",
