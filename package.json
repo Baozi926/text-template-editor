@@ -1,20 +1,14 @@
 {
   "name": "text-template-editor",
   "author": "cai huimin",
-  "version": "0.0.8",
+  "version": "0.0.1",
   "type": "module",
   "files": [
     "dist"
   ],
   "main": "./dist/index.js",
   "module": "./dist/index.js",
-  "exports": {
-    ".": {
-      "import": "./dist/index.js",
-      "require": "./dist/index.umd.js"
-    }
-  },
-  "source": "src/index.ts",
+  "types": "./dist/types/index.d.ts",
   "description": "",
   "scripts": {
     "dev": "vite",
@@ -34,6 +28,7 @@
     "sass": "^1.75.0",
     "typescript": "^5.2.2",
     "vite": "^5.2.0",
+    "vite-plugin-dts": "^3.9.0",
     "vue-tsc": "^2.0.6"
   },
   "license": "MIT",
