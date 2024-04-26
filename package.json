@@ -1,0 +1,31 @@
+{
+  "name": "text-template-editor",
+  "version": "0.0.2",
+  "type": "module",
+  "exports": {
+    "require": "./dist/text-template-editor.cjs",     
+    "default": "./dist/text-template-editor.js" 
+  },
+  "description": "",
+  
+  "scripts": {
+    "dev": "vite",
+    "build": "vite build",
+    "preview": "vite preview"
+  },
+  "dependencies": {
+    "@codemirror/state": "^6.4.1",
+    "@codemirror/view": "^6.26.3",
+    "codemirror": "^6.0.1",
+    "mustache": "^4.2.0",
+    "vue": "^3.4.21"
+  },
+  "devDependencies": {
+    "@types/mustache": "^4.2.5",
+    "@vitejs/plugin-vue": "^5.0.4",
+    "sass": "^1.75.0",
+    "typescript": "^5.2.2",
+    "vite": "^5.2.0",
+    "vue-tsc": "^2.0.6"
+  }
+}
