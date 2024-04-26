@@ -1,7 +1,7 @@
 <script setup lang="ts">
 // import TextTemplateEditor from "./components/TextTemplateEditor.vue";
-import TextTemplateEditor from "../dist/text-template-editor.js";
-import "../dist/style.css"
+import TextTemplateEditor from "./components/TextTemplateEditor.vue";
+// import "../dist/style.css"
 import Mustache from "mustache";
 import { ref } from "vue";
 const textDict = {

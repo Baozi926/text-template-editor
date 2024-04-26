@@ -2,12 +2,13 @@
   "name": "text-template-editor",
   "version": "0.0.3",
   "type": "module",
+  "main": "./dist/text-template-editor.js",
+  "source":"src/index.ts",
   "exports": {
     "require": "./dist/text-template-editor.cjs",     
     "default": "./dist/text-template-editor.js" 
   },
   "description": "",
-  
   "scripts": {
     "dev": "vite",
     "build": "vite build",
@@ -27,5 +28,10 @@
     "typescript": "^5.2.2",
     "vite": "^5.2.0",
     "vue-tsc": "^2.0.6"
+  },
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "git@github.com:Baozi926/text-template-editor.git"
   }
 }

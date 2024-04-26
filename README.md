@@ -4,6 +4,19 @@
 
 ![这是一个示例图片](https://github.com/Baozi926/text-template-editor/raw/main/case.png)
 
+#安装
+
+```
+
+
+npm i text-template-editor
+
+//or
+yarn add text-template-editor
+
+
+```
+
 # 例子
 
 ```vue
